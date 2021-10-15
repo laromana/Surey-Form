@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  color: #eef7fb;
+  font-family: "PT Serif", serif;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* background: darkblue; */
+  background-image: linear-gradient(
+      115deg,
+      rgba(2, 48, 71, 0.836),
+      rgba(33, 157, 188, 0.822)
+    ),
+    url("/img/nail_technician_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* body {
+  background-image: url("/img/nail_technician_background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+} */
+
+.main-div {
+  /* background: burlywood; */
+  margin: 0;
+  width: 55%;
+  margin: 50px auto 0px auto;
+  /* display: none; */
+}
+
+.form-description {
+  /* background: cadetblue; */
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+.main-form {
+  background: rgba(2, 40, 60, 0.8);
+  /* border: darkblue solid 10px; */
+  border-radius: 5px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+#survey-form {
+  /* background: coral; */
+  display: flex;
+  flex-direction: column;
+}
+
+#user-info {
+  /* background: crimson; */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-bottom: 20px;
+}
+
+#user-info label {
+  margin-left: 20px;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#user-info .all-inputs {
+  width: 95%;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  margin: 0 auto 0 auto;
+  padding-left: 10px;
+  font-size: 18px;
+  color: #02283c;
+}
+#main-survey {
+  /* background: cyan; */
+  display: flex;
+  flex-direction: column;
+}
+
+#main-survey label,
+fieldset {
+  margin-left: 20px;
+}
+
+#improve-checkbox {
+  margin-left: 20px;
+  display: block;
+}
+
+.improve-inputs {
+  width: 95%;
+  height: 40px;
+  margin: 10px auto 10px auto;
+  /* border: 2px solid green; */
+  border-radius: 7px;
+  font-size: 18px;
+  color: #02283c;
+}
+
+textarea {
+  width: 95%;
+  margin: 20px auto 20px auto;
+  resize: vertical;
+  min-height: 200px;
+  font-size: 20px;
+  color: #02283c;
+}
+
+fieldset {
+  font-size: 20px;
+  display: block;
+  border: none;
+  color: #02283c;
+}
+
+fieldset input,
+fieldset label {
+  margin: 10px 0 10px 5px;
+}
+
+fieldset legend {
+  margin-bottom: 10px;
+}
+
+#improve-checkbox {
+  font-size: 20px;
+}
+
+#improve-checkbox input,
+#improve-checkbox label {
+  margin: 10px 0 10px 10px;
+  margin-left: 10px;
+}
+
+#improve-checkbox p {
+  margin: 10px 0 10px 0;
+}
+
+#submit {
+  width: 95%;
+  align-self: center;
+  padding: 10px 0;
+  background: #ffb703;
+  border: 0;
+}
+
+textarea:focus {
+  outline: none;
+  border: 3px solid #5c6fff;
+}
+
+input:focus {
+  outline: 0;
+  /* border-color: 3px solid #5c6fff; */
+  box-shadow: 0 0 0 0.2rem #dee2ff;
+  /* box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); */
+}
+
+.select-text {
+  color: #02283c;
+}

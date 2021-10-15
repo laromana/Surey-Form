@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>JAdorn | Survey Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <!-- Main contaoner for the form -->
+    <div class="main-div">
+      <!-- Page header -->
+      <div class="form-description">
+        <h1 id="title">JAdorn Survey</h1>
+        <p id="description">
+          Thank you for taking the time to share your experience with us on how
+          you like our services.
+        </p>
+      </div>
+      <!-- Main form div -->
+      <div class="main-form">
+        <!-- start of the form -->
+        <form id="survey-form">
+          <!-- user info div with text input -->
+          <div id="user-info">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="user-info"
+              class="all-inputs"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="user-info"
+              id="email"
+              class="all-inputs"
+              placeholder="Email"
+              required
+            />
+            <label id="number-label" for="number"
+              >How many treatment have you had with us?</label
+            >
+            <input
+              type="number"
+              name="user-info"
+              id="number"
+              min="1"
+              max="99"
+              class="all-inputs"
+              placeholder="0"
+            />
+          </div>
+          <!-- Main survey questions -->
+          <div id="main-survey">
+            <!-- last treatment dropdown -->
+            <label for="dropdown"
+              >Wich was the last treatment you received?</label
+            >
+            <select
+              type="text"
+              name="user-info"
+              id="dropdown"
+              class="improve-inputs"
+            >
+              <option value="" disabled selected>Select your option</option>
+              <option class="select-text" value="acrilic">Acrilic Nails</option>
+              <option class="select-text" value="gloss">Gloss Nails</option>
+              <option class="select-text" value="tan">Body Tan</option>
+              <option class="select-text" value="manicure">
+                Full Manicure
+              </option>
+            </select>
+
+            <!-- Would you reocmmend radio fieldset -->
+            <fieldset>
+              <legend>Would you recommend JAdorn to a friend?</legend>
+              <input
+                type="radio"
+                id="definitely"
+                name="recomendation"
+                value="definitely"
+                class="all-inputs"
+              />
+              <label for="definitely">Definitely</label><br />
+
+              <input
+                type="radio"
+                id="maybe"
+                name="recomendation"
+                value="maybe"
+                class="all-inputs"
+              />
+              <label for="maybe">Maybe</label><br />
+              <input
+                type="radio"
+                id="not-sure"
+                name="recomendation"
+                value="not-sure"
+                class="all-inputs"
+              />
+              <label for="not-sure">Not Sure</label>
+            </fieldset>
+
+            <!-- recomendations dropdown-->
+            <label for="reson-recommend"
+              >Why Would recommend Jadorn to a friend?</label
+            >
+            <select
+              name="recomendation"
+              id="reason-recommend"
+              class="improve-inputs"
+            >
+              <option value="" disabled selected>Select your option</option>
+              <option class="select-text" value="quiality">Quiality</option>
+              <option class="select-text" value="price">Price</option>
+              <option class="select-text" value="mobile">Mobile</option>
+              <option class="select-text" value="availability">
+                Availability
+              </option>
+            </select>
+
+            <!-- What would you like us to improve question checkbox-->
+
+            <div id="improve-checkbox">
+              <p>What would you like us to improve?</p>
+              <input
+                type="checkbox"
+                id="location"
+                name="improve"
+                class="all-inputs"
+                value="location"
+              />
+              <label for="location">Better location</label><br />
+              <input
+                type="checkbox"
+                id="more-treatments"
+                name="improve"
+                class="all-inputs"
+                value="treatments"
+              />
+              <label for="more-treatments">More treatments</label><br />
+              <input
+                type="checkbox"
+                id="brands"
+                name="improve"
+                class="all-inputs"
+                value="brands"
+              />
+              <label for="brands">More brand variety</label><br />
+              <input
+                type="checkbox"
+                id="treatment-time"
+                name="improve"
+                class="all-inputs"
+                value="treatment-time"
+              />
+              <label for="treatment-time"
+                >Less time to complete treatment</label
+              >
+              <br />
+              <input
+                type="checkbox"
+                id="body-tan"
+                name="improve"
+                class="all-inputs"
+                value="body-tan"
+              />
+              <label for="body-tan">Full body tan</label>
+            </div>
+            <!-- Suggestions textarea -->
+
+            <label for="comments">Other comments and suggestions</label>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+              class="all-inputs"
+              placeholder="Enter your comment here"
+            ></textarea>
+            <input id="submit" type="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
